@@ -1,10 +1,3 @@
-//
-//  SearchResultsViewController.swift
-//  Netflix Clone
-//
-//  Created by Weidong Xu on 12/17/23.
-//
-
 import UIKit
 
 class SearchResultsViewController: UIViewController {
@@ -16,7 +9,6 @@ class SearchResultsViewController: UIViewController {
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width/3 - 10, height:200)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         layout.minimumInteritemSpacing = 0
-        
         
         collectionView.register(TitleCollectionViewCell.self, forCellWithReuseIdentifier: TitleCollectionViewCell.identifier)
         return collectionView
@@ -36,7 +28,6 @@ class SearchResultsViewController: UIViewController {
         super.viewDidLayoutSubviews()
         searchResultsCollectionView.frame = view.bounds
     }
-    
 }
 
 extension SearchResultsViewController : UICollectionViewDelegate, UICollectionViewDataSource {
@@ -54,6 +45,4 @@ extension SearchResultsViewController : UICollectionViewDelegate, UICollectionVi
         cell.configure(with: title.poster_path ?? "")
         return cell
     }
-    
-    
 }

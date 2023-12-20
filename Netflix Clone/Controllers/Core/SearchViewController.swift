@@ -1,10 +1,3 @@
-//
-//  SearchViewController.swift
-//  Netflix Clone
-//
-//  Created by Weidong Xu on 12/13/23.
-//
-
 import UIKit
 
 class SearchViewController: UIViewController {
@@ -13,18 +6,16 @@ class SearchViewController: UIViewController {
     
     private let discoverTable: UITableView = {
         let table = UITableView()
-        //table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.identifier)
         return table
     }()
     
     private let searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: SearchResultsViewController())
-        controller.searchBar.placeholder = "Search for a movie or a tv show"
+        controller.searchBar.placeholder = "Search for a Movie or a TV show"
         controller.searchBar.searchBarStyle = .minimal
         return controller
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,7 +77,6 @@ extension SearchViewController : UITableViewDataSource, UITableViewDelegate {
         return cell
     }
  
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          return 140
     }
@@ -115,8 +105,5 @@ extension SearchViewController: UISearchResultsUpdating {
                 }
             }
         }
-    
     }
-    
-    
 }

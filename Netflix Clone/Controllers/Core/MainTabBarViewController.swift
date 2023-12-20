@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Netflix Clone
-//
-//  Created by Weidong Xu on 12/13/23.
-//
-
 import UIKit
 
 class MainTabBarViewController: UITabBarController {

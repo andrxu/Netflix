@@ -1,10 +1,3 @@
-//
-//  Extensions.swift
-//  Netflix Clone
-//
-//  Created by Weidong Xu on 12/15/23.
-//
-
 import Foundation
 
 extension String {

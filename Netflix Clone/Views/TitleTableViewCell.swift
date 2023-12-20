@@ -1,16 +1,7 @@
-//
-//  TitleTableViewCell.swift
-//  Netflix Clone
-//
-//  Created by Weidong Xu on 12/16/23.
-//
-
 import UIKit
 
 class TitleTableViewCell: UITableViewCell {
-
     static let identifier = "TitleTableViewCell"
-    
     
     private let playTitlesButton: UIButton = {
         let button = UIButton()
@@ -67,7 +58,6 @@ class TitleTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate(playTitleButtonContraints)
     }
     
-    
     public func configure(with model: TitleViewModel) {
         guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model.posterURL)") else {
             return
@@ -76,9 +66,7 @@ class TitleTableViewCell: UITableViewCell {
         titleLabel.text = model.titleName
     }
     
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }

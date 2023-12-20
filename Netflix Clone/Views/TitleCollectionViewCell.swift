@@ -1,10 +1,3 @@
-//
-//  TitleCollectionViewCell.swift
-//  Netflix Clone
-//
-//  Created by Weidong Xu on 12/15/23.
-//
-
 import UIKit
 import SDWebImage
 
@@ -35,5 +28,4 @@ class TitleCollectionViewCell: UICollectionViewCell {
         guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model)") else {return }
         posterImageView.sd_setImage(with: url, completed: nil)
     }
-    
 }

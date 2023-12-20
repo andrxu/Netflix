@@ -1,10 +1,3 @@
-//
-//  Movie.swift
-//  Netflix Clone
-//
-//  Created by Weidong Xu on 12/14/23.
-//
-
 import Foundation
 
 struct TrendingTitleResponse: Codable {
