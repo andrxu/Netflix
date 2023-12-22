@@ -69,4 +69,4 @@ class DataPersistenceManager {
             completion(.failure(DatabaseError.failedToDeleteData))
         }
     }
-}
+ }

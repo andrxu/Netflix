@@ -89,7 +89,6 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-    
 }
 
 
